@@ -1,0 +1,133 @@
+body{
+    background-image: url(./shara_desert_720.jpg);
+    background-repeat:repeat;
+    background-position:center center;
+    background-attachment: fixed;
+    background-size:cover;
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+.top{
+text-decoration:none;
+color:white;
+margin-right:30px;
+text-align:center;
+}
+.navigation{
+    display:flex;
+    align-items:center;
+}
+.logo{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.menu{
+    position: relative;
+    right: 10px;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+.sahara{
+    color:white;
+}
+.boxes{
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap:3em 3em;
+}
+.western{
+    background-image: url(./pic-1.png);
+    background-position:100%;
+    background-size:cover;
+    border-radius:10px;
+    padding:10px;
+    color:white;
+    font-size:0.5em;
+}
+.lorem{
+    line-height:30px;
+}
+.al{
+    background-image: url(./pic-2.png);
+    background-position:100%;
+    background-size:cover;
+    border-radius:10px;
+    padding:10px;
+    color:white;
+    font-size:0.5em; 
+}
+.giza{
+    background-image: url(./pic-3_480.png);
+    background-position:100%;
+    background-size:cover;
+    border-radius:10px;
+    padding:10px;
+    color:white;
+    font-size:0.5em; 
+}
+.kalahari{
+    background-image: url(./pic-4_480.png);
+    background-position:100%;
+    background-size:cover;
+    border-radius:10px;
+    padding:10px;
+    color:white;
+    font-size:0.5em; 
+}
+.name{
+    font-size:4em;
+}
+.text{
+    font-size:0.6em;
+    line-height:20px;
+}
+.button{
+    border-radius:20px;
+    border-color:white;
+    padding:10px;
+    width:200px;
+    text-align:center;
+    font-weight:bold;
+    margin-top:30px;
+    margin-bottom:50px;
+}
+.cards {
+    transition: 0.3s;
+  }
+  .cards:hover {
+    transform: translate(0, -10px);
+  }
+@media (max-width:856px){
+    .row{
+    width:100%;
+    display:block;
+    }
+    .boxes{
+        grid-template-columns: 400px;
+        grid-template-rows: 200px 200px 200px 200px;
+        justify-content: center;
+    }
+    .sahara{
+        margin-left:50px;
+    }
+}
+@media(max-width:576px){
+    .boxes{
+        grid-template-columns: 200px;
+        grid-template-rows: 200px 200px 200px 200px;
+        justify-content: center;
+    }
+    .navigation{
+       flex-direction: column;
+    }
+}
